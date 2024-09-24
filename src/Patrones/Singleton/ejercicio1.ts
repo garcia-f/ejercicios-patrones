@@ -5,10 +5,10 @@ export class Configuracion {
     private _rutaBaseDatos: string;
     private _nivelRegistro: string;
 
-    constructor() {
-        this._idioma = '';
-        this._rutaBaseDatos = '';
-        this._nivelRegistro = '';
+    private constructor() {
+        this._idioma = 'es';
+        this._rutaBaseDatos = 'path/to/db';
+        this._nivelRegistro = 'root';
     }
     
     public static obtenerInstancia(): Configuracion {
